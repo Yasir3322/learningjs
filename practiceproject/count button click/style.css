@@ -1,0 +1,21 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    place-items: center;
+    height: 100hv;
+}
+.container{
+    height: 400px;
+    width: 250px;
+    background-color: #333;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    color: white;
+    font-family: verdana;
+}
+#btn{
+    color: white;
+    background-color: #333;
+}

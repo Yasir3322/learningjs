@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+        <p>enter no greater than 100 and less than 300</p>
+        Enter no: <input type="number" id="field" min="100" max="300" required onchange="myfun()"/>
+        <button onclick="myfun()">check</button>
+        <p id="para"></p>
+
+        <script>
+          function myfun(){
+              const inputvalue = document.getElementById('field');
+              if(!inputvalue.checkValidity()){
+                  document.getElementById('para').innerHTML = inputvalue.validationMessage;
+              }
+              else{
+                  document.getElementById('para').innerHTML = "input ok";
+              }
+          }
+        </script>
+    
+</body>
+</html>

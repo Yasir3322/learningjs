@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="data"></div>
+
+    <script>
+
+        function display(somedata){
+            document.getElementById("data").innerHTML = somedata;
+        }
+
+        function getdata(mycallback){
+            let xhr = new XMLHttpRequest();
+
+            xhr.open("GET" , "data.html");
+            xhr.onload =function (){
+                if(xhr.status == 200){
+                    mycallback(this.responseText);
+                }else{
+                    mycallback("error");
+                }
+            }
+            xhr.send();
+        }
+        getdata(display);
+    </script>
+
+</body>
+</html>

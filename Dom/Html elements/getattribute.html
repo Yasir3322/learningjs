@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+          <h1 id="myh" class="demoheading">heading</h1>
+          <a id="mylink"  href="http://www.google.com" target="_blank"></a>
+          <h1 id="h2"></h1>
+          <h3 id="h3"></h3>
+
+          <script>
+              let el = document.getElementById('myh');
+              let attr = el.getAttribute('class');
+               document.getElementById('h2').innerHTML = attr;
+               
+               let el2 = document.getElementById('mylink');
+               let attr2 = el2.getAttribute('target');
+               document.getElementById('h3').innerHTML = attr2;
+               
+          </script>
+</body>
+</html>

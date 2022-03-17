@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="user" data-id="143020443" data-user="yasir" data-date-of-birth>Yasir uddin</div>
+    
+
+    <script>
+        let el = document.querySelector('#user');
+        console.log(el.id);
+        console.log(el.dataset.id);
+        console.log(el.dataset.user);
+
+        el.dataset.dataofbirth = "10-6-1999";
+        console.log(el.dataset.dataofbirth);
+    </script>
+</body>
+</html>

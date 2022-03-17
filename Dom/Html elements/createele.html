@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+         
+        <button onclick="demo()">click</button>
+        
+    </div>
+
+    <script>
+        // function demo(){
+        //     let p = document.createElement('p');
+        //     let text = document.createTextNode("This is a paragraph");
+        //     p.appendChild(text);
+        //     document.body.appendChild(p);
+        //     // var div = document.getElementById('main');
+        //     // div.appendChild(p);
+        // }
+
+        function demo(){
+            let button = document.createElement('button');
+            button.innerHTML = "creat new";
+            var div = document.getElementById('main');
+            div.appendChild(button);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <div id="mydiv" style="background-color: orange; padding: 10px;">
+            This orange element has an onmousemove event handler that displays a random number when you move the mouse inside.
+            <p>Click "Remove" to remove the event handler.</p>
+            <button id="btn" onclick="myfun()">Remove</button>
+            <p id="para"></p>
+        </div>
+        <script>
+               const mydiv = document.getElementById('mydiv');
+               mydiv.addEventListener("mousemove" ,myfunction);
+            function myfun(){
+                mydiv.removeEventListener("mousemove" , myfunction)
+            }
+            function myfunction(){
+                document.getElementById('para').innerHTML = Math.random();
+            }
+        </script>
+</body>
+</html>

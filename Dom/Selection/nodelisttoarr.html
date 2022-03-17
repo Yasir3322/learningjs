@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <h2>Node list to array</h2>
+      <p>hello</p>
+      <p>hi</p>
+      <p>holi glocomoli</p>
+      <p>sanga ye</p>
+      <div id="values"></div>
+
+      <script>
+              let nodelist = document.querySelectorAll('p');
+            //   var arr = [];
+            //   for(i=0; i<nodelist.length;i++){
+            //       arr.push(nodelist[i]);
+            //   }
+            //   console.log(arr);
+             
+            let myarray = Array.from(nodelist);
+            console.log(myarray);
+      </script>
+</body>
+</html>

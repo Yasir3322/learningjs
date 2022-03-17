@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="data">
+     <button onclick="change()">click</button>
+     <p id="para">this is a paragraph</p>
+    </div>
+     <script>
+         function change(){
+         let heading = document.createElement('h1');
+         let text = document.createTextNode('Heading');
+
+         heading.appendChild(text);
+
+         var div = document.getElementById('data');
+         var paragraph = document.getElementById('para');
+         div.insertBefore(heading,paragraph);
+         }
+     </script>
+</body>
+</html>

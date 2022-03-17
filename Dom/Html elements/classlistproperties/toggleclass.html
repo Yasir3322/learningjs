@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mystyle{
+               background-color: peru;
+               padding: 16px;
+        }
+        .newstyle{
+            background-color: cyan;
+            padding: 20px;
+            font-size: larger;
+            font-family: verdana;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn" onclick="change()">toggle</button>
+    <p>click btn to toggle/change div</p>
+    <div id="mydiv" class="mystyle">
+        <p>i am para in div</p>
+    </div>
+    
+    <script>
+        function change(){
+        document.getElementById('mydiv').classList.toggle('newstyle');}
+    </script>
+</body>
+</html>
